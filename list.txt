@@ -10,6 +10,89 @@
 ╠╦╝├┤ │─┼┐│ ││├┬┘├┤ │││├┤ │││ │ └─┐
 ╩╚═└─┘└─┘└└─┘┴┴└─└─┘┴ ┴└─┘┘└┘ ┴ └─┘
 
+[] 1. The questionnaire will have to contain at least 20 questions.
+[] 2. The format of the answers can be divided into:
+    [] Select single answer from multiple options (radio)
+    [] Select multiple answers (checkbox)
+    [] Select from a drop-down menu
+[] 3. There will be a progress bar that will measure the percentage of questions
+    answered with respect to the total (this bar should be displayed on all pages
+    and should be updated after answering each question).
+[] 4. The progress bar will be divided into sections (eg, HTML, CSS, JS ...) and
+    should be updated dynamically each time a question is answered using a
+    CSS3 animation.
+[] 5. After answering each question the result will be stored in memory.
+[] 6. The first screen that will be shown as you can see in the wireframe will ask
+    the user for a nickname
+[] 7. The first screen that will be shown as you can see in the wireframe will ask
+    the user for a nickname.
+[] 8. All the evolutionary will be carried out memory and without a database, using
+     HTML, CSS and Javascript (NO third-party libraries can be used)
+[] 9. Write clear and concise commits, should not extend more than 50 characters.
+[] 10. It has to be responsive and you must get it without using third-party libraries.
+[] 11. When moving from one question to another, an animation made with CSS3
+     will be displayed.
+[] 12. At the end of the questionnaire, you should show a final screen with your
+     result and the final ranking indicating your score and that of the other records
+     that have been previously made. The ranking table will be filled in with the
+     records stored in memory. This table can be ordered from highest to lowest
+     score by a button. When refresh the page all information are cleaned and
+     ranking are empty. ( Show the correct message for the user )
+[] 13. All code included comments need to be write in English
+[] 14. Use a code style like camelCase
+[] 15. In the case of using HTML never use inline styles
+[] 16. In the case of using different programming language always define the
+     implementation in separate terms
+[] 17. It is recommended to divide the tasks into several subtasks so that you can
+     associate each particular step of the construction with a specific
+     commitment.
+[] 18. For the project documentation a PDF version is required within the repository
+[] 19. You should try as much as possible that the commits and planned tasks are
+     the same
+[] 20. Delete unused files
+
+
 ╔╦╗┌─┐  ╔╦╗┌─┐
  ║ │ │   ║║│ │
  ╩ └─┘  ═╩╝└─┘
+
+ 1. General analysis
+    [] What will the interface be like for the user to carry out this questionnaire.
+    [] Analyze the questions you will ask the user, taking into account that the
+        answers may have different response formats.
+    [] How you will organize the project resources (time, teamwork, resources,
+        responsibilities, etc.)
+    [] Analyze how you will organize the project at the architecture level so that it is
+        scalable and easy to understand.
+    [] Think about questions about real problems in the field of web development that you
+        consider relevant.
+
+ 2. Project organization
+    
+    [] List of tasks to be performed.
+    [] Priority of each task
+    [] Title and description of each of them
+    [] Difficulty level
+    [] Estimated time for each task.
+    [] Record of incidents that were detected during project execution.
+    [] Record of lessons learned.
+    [] Project Calendar
+    [] The Chronogram of the project.
+
+5. Testing
+Finally you will have to verify that your site works correctly, attached screenshots of
+the following browsers. Don't forget to validate your code!
+ []   Internet Explorer 11 or higher
+ []   Safari in one of its latest versions
+ []   Firefox in one of its latest versions
+ []   Chrome in one of its latest versions
+ []   Main mobile browsers
+
+
+
+
+
+
+
+
+
