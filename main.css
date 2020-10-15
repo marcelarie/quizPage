@@ -4,20 +4,38 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing:border-box;
 }
 a { color: inherit; }
+main { 
+    background-color: #282828;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    width: 100vw;
+    height: 100vh;
+}
 /*fonts*/
-
+/*Oswald*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 /*responsive*/
 
-/*header*/
-
-/*logo*/
-
-/*navigation Bar*/
-
 /*main*/
+.block {
+    background-color: white;
+    padding: 5px;
+}
 
+.big-text {
+    
+}
+.big-text h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 9vw;
+    color: white;
+    text-align: center;
+
+}
 /*footer*/
 
 /*mediaQueries*/
