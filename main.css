@@ -102,4 +102,7 @@ main {
 .hide {
     display: none;
 }
+.show {
+    display:initial;
+}
 /*mediaQueries*/
