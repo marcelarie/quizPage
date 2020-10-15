@@ -23,7 +23,6 @@ main {
 
 /*main*/
 .block {
-    padding: 5px;
 }
 .big-text {
     
@@ -37,24 +36,32 @@ main {
 /*buttons*/
 .button-grid {
     display: grid;
-    grid-template-columns: repeat(2, auto);
     gap: 5px;
 }
-.controls { }
-.start-button {}
-.restart-button {}
-.next-button {}
+.controls {
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.button-start {
+    float: left;
+}
+.button-next {
+    float: right;
+}
 /*questions*/
 .question-container {
     margin: 3vw;
-    background-color: grey;
+    padding: 3vw;
     border-radius: 3vh;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 .question {
-    font-size: 3vw;
+    font-size: 2.5rem;
+    margin: 5%;
     color: white;
     text-align: center;
 }
@@ -64,11 +71,14 @@ main {
     margin: auto;
     background-color: white;
     border: black;
-    font-size: inherit;
+    border-radius: 6px;
+    font-size:1.5rem;
 }
-.bttn:hover {
-    background-color: #aaaa;
-    color: white;
+#answers .bttn:hover {
+    padding: 1.5rem 2.5rem;
+}
+.bttn:focus{
+    color: seagreen;
 }
 
 
