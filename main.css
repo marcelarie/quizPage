@@ -7,8 +7,9 @@
     box-sizing:border-box;
 }
 a { color: inherit; }
+body {background-color: #282828;}
 main { 
-    background-color: #282828;
+    background-color: inherit;
     justify-content: center;
     align-items: center;
     display:flex;
@@ -34,26 +35,53 @@ main {
 
 }
 /*buttons*/
+.bttn {
+    padding: 1em 1.5em;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 5em;
+    border: none;
+    font-size:1.5rem;
+    outline: none;
+}
+#answers .bttn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.bttn:focus{
+    background-image: url(https://findicons.com/files/icons/1035/human_o2/128/dialog_question.png);
+    background-repeat: no-repeat;
+    background-position: right center left;
+}
 .button-grid {
     display: grid;
     gap: 5px;
 }
 .controls {
     margin: 15px;
+    gap: 1em;
     align-items: center;
     justify-content: center;
     display: flex;
 }
-.button-start {
+#button-start {
     float: left;
+    background-color: #2AC73B;
+    border-radius:0.3em;
 }
-.button-next {
+.controls button:hover {
+    cursor: pointer;
+}
+.controls button:focus{
+    transform: scale(0.9);
+}
+#button-next {
+    border-radius: 0.3em;
     float: right;
+    background-color: #C7712A;
 }
 /*questions*/
 .question-container {
-    margin: 3vw;
-    padding: 3vw;
     border-radius: 3vh;
     width: 100%;
     justify-content: center;
@@ -66,20 +94,6 @@ main {
     text-align: center;
 }
 .answers {}
-.bttn {
-    padding: 1em 1.5em;
-    margin: auto;
-    background-color: white;
-    border: black;
-    border-radius: 6px;
-    font-size:1.5rem;
-}
-#answers .bttn:hover {
-    padding: 1.5rem 2.5rem;
-}
-.bttn:focus{
-    color: seagreen;
-}
 
 
 /*mediaQueries*/
