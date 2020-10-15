@@ -48,7 +48,7 @@ main {
     cursor: pointer;
     transform: scale(1.1);
 }
-.bttn:focus{
+#answers .bttn:focus{
     background-image: url(https://findicons.com/files/icons/1035/human_o2/128/dialog_question.png);
     background-repeat: no-repeat;
     background-position: right center left;
@@ -63,6 +63,9 @@ main {
     align-items: center;
     justify-content: center;
     display: flex;
+}
+.controls button {
+    padding: 10px 20px;
 }
 #button-start {
     float: left;
@@ -81,7 +84,7 @@ main {
     background-color: #C7712A;
 }
 /*questions*/
-.question-container {
+#question-container {
     border-radius: 3vh;
     width: 100%;
     justify-content: center;
@@ -95,5 +98,8 @@ main {
 }
 .answers {}
 
-
+/*hide&show*/
+.hide {
+    display: none;
+}
 /*mediaQueries*/
