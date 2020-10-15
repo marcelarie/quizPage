@@ -14,6 +14,7 @@ main {
     display:flex;
     width: 100vw;
     height: 100vh;
+    font-family: 'Oswald', sans-serif;
 }
 /*fonts*/
 /*Oswald*/
@@ -22,20 +23,40 @@ main {
 
 /*main*/
 .block {
-    background-color: white;
     padding: 5px;
 }
-
 .big-text {
     
 }
 .big-text h1 {
-    font-family: 'Oswald', sans-serif;
     font-size: 9vw;
     color: white;
     text-align: center;
 
 }
-/*footer*/
+/*buttons*/
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2);
+}
+.controls { }
+.start-button {}
+.restart-button {}
+.next-button {}
+/*questions*/
+.question-container {
+    margin: 5px;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+.question {
+    font-size: 3vw;
+    color: white;
+    text-align: center;
+}
+.answers {}
+.answer-button {}
+
 
 /*mediaQueries*/
