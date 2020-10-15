@@ -37,7 +37,8 @@ main {
 /*buttons*/
 .button-grid {
     display: grid;
-    grid-template-columns: repeat(2);
+    grid-template-columns: repeat(2, auto);
+    gap: 5px;
 }
 .controls { }
 .start-button {}
@@ -45,8 +46,10 @@ main {
 .next-button {}
 /*questions*/
 .question-container {
-    margin: 5px;
-    background-color: blue;
+    margin: 3vw;
+    background-color: grey;
+    border-radius: 3vh;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -56,7 +59,17 @@ main {
     text-align: center;
 }
 .answers {}
-.answer-button {}
+.bttn {
+    padding: 1em 1.5em;
+    margin: auto;
+    background-color: white;
+    border: black;
+    font-size: inherit;
+}
+.bttn:hover {
+    background-color: #aaaa;
+    color: white;
+}
 
 
 /*mediaQueries*/
