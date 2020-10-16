@@ -7,7 +7,6 @@ nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     nextQuestion()
 })
-
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answers')
 let shuffledQuestions, currentQuestionIndex
@@ -36,6 +35,7 @@ function nextQuestion() {
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
+
         const button = document.createElement('button')
         button.innerText = answer.text
         button.classList.add('bttn')
@@ -57,16 +57,17 @@ function resetState() {
 function selectAnswer(e) {
     const slectedButton = e.target
     const correct = slectedButton.dataset.correct
-    if (correct === 'true') {
-        incrementScore(SCORE_POINTS)
-    }
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
     } else {
         startButton.innerText = 'Scores'
         startButton.classList.remove('hide')
     }
+    if (correct === 'true') {
+        incrementScore(SCORE_POINTS)
+    }
 }
+
 
 incrementScore = num => {
     score += num

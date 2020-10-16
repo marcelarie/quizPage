@@ -7,6 +7,8 @@ https://www.youtube.com/watch?v=riDzcEQbX6k
 ╦═╗┌─┐┌─┐┌─┐┬ ┬┬─┐┌─┐┌─┐┌─┐
 ╠╦╝├┤ └─┐│ ││ │├┬┘│  ├┤ └─┐
 ╩╚═└─┘└─┘└─┘└─┘┴└─└─┘└─┘└─┘
+https://medium.com/@oprearocks/what-do-the-three-dots-mean-in-javascript-bc5749439c9a
+
 
 ╦═╗┌─┐┌─┐ ┬ ┬┬┬─┐┌─┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
 ╠╦╝├┤ │─┼┐│ ││├┬┘├┤ │││├┤ │││ │ └─┐
