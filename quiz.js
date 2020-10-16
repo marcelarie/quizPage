@@ -18,14 +18,24 @@ function nextQuestion() {
 }
 function showQuestion(question) {
     questionElement.innerText = question.question
+    question.answers.forEach(answer => {
+        const button = document.createElement('button')
+        button.innerText = answer.text
+        button.classList.add('bttn')
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        }
+        button.addEventListener('click', selectAnswer)
+        answerButtonsElement.appendChild(button)
+    })
 }
-function selectAnswer() {
+function selectAnswer(e) {
 }
 
 const questions = [
     {
         question: 'whats happening',
-        amswers: [
+        answers: [
             {text: 'a', correct: true},
             {text: 'b', correct: false},
             {text: 'c', correct: false},

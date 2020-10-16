@@ -24,8 +24,6 @@ https://www.youtube.com/watch?v=riDzcEQbX6k
     should be updated dynamically each time a question is answered using a
     CSS3 animation.
 [] 5. After answering each question the result will be stored in memory.
-[] 6. The first screen that will be shown as you can see in the wireframe will ask
-    the user for a nickname
 [] 7. The first screen that will be shown as you can see in the wireframe will ask
     the user for a nickname.
 [] 8. All the evolutionary will be carried out memory and without a database, using
@@ -59,7 +57,7 @@ https://www.youtube.com/watch?v=riDzcEQbX6k
  ╩ └─┘  ═╩╝└─┘
 
  1. General analysis
-    [] What will the interface be like for the user to carry out this questionnaire.
+    [X] What will the interface be like for the user to carry out this questionnaire.
     [] Analyze the questions you will ask the user, taking into account that the
         answers may have different response formats.
     [] How you will organize the project resources (time, teamwork, resources,
@@ -85,6 +83,7 @@ https://www.youtube.com/watch?v=riDzcEQbX6k
 
     Finally you will have to verify that your site works correctly, attached screen-shots of
     the following browsers. Don't forget to validate your code!
+        []   Validation
         []   Internet Explorer 11 or higher
         []   Safari in one of its latest versions
         []   Firefox in one of its latest versions
@@ -105,5 +104,7 @@ https://www.youtube.com/watch?v=riDzcEQbX6k
 16/10/20 - Another error after fixing the one before. The problem was that I used a class to refer to .questions. I changed
            to an id="" and everything works perfect now.
 
-
+16/10/20 - Error quiz.js:21 Uncaught TypeError: Cannot read property 'forEach' of undefined
+                at showQuestion (quiz.js:21)
+                at nextQuestion (quiz.js:17)
 

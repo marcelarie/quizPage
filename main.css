@@ -96,7 +96,6 @@ main {
     color: white;
     text-align: center;
 }
-.answers {}
 
 /*hide&show*/
 .hide {
@@ -105,4 +104,5 @@ main {
 .show {
     display:initial;
 }
+
 /*mediaQueries*/
