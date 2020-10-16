@@ -80,7 +80,7 @@ main {
 }
 #button-next {
     border-radius: 0.3em;
-    float: right;
+    position: absolute;
     background-color: #C7712A;
 }
 /*questions*/
@@ -95,6 +95,19 @@ main {
     margin: 5%;
     color: white;
     text-align: center;
+}
+/*score*/
+.points {
+    text-align: right;
+}
+.points-text {
+    color: white;
+    font-size: 2.0rem;
+}
+.num-score {
+    /*background-image: radial-gradient(#A88500,gold);*/
+    color: gold;
+    font-size: 2.5rem;
 }
 
 /*hide&show*/
