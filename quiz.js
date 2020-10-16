@@ -1,4 +1,5 @@
 const startButton = document.getElementById('button-start')
+const nextButton = document.getElementById('button-next')
 const questionContainerElement = document.getElementById('question-container')
 startButton.addEventListener('click', startQuiz)
 const questionElement = document.getElementById('question')
@@ -14,6 +15,7 @@ function startQuiz() {
     nextQuestion()
 }
 function nextQuestion() {
+    resetState()
     showQuestion(suffledQuestions[currentQuestionIndex])
 }
 function showQuestion(question) {
@@ -29,6 +31,14 @@ function showQuestion(question) {
         answerButtonsElement.appendChild(button)
     })
 }
+
+function resetState() {
+    nextButton.classList.add('hide')
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+    }
+}
+
 function selectAnswer(e) {
 }
 

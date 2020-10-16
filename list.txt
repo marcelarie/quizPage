@@ -107,4 +107,5 @@ https://www.youtube.com/watch?v=riDzcEQbX6k
 16/10/20 - Error quiz.js:21 Uncaught TypeError: Cannot read property 'forEach' of undefined
                 at showQuestion (quiz.js:21)
                 at nextQuestion (quiz.js:17)
+           At the end I just needed to type answers and now answer :(
 
