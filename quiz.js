@@ -1,26 +1,35 @@
 const startButton = document.getElementById('button-start')
 const questionContainerElement = document.getElementById('question-container')
 startButton.addEventListener('click', startQuiz)
+const questionElement = document.getElementById('question')
+const answerButtonsElement = document.getElementById('answers')
+let suffledQuestions, currentQuestionIndex
 
 function startQuiz() {
     console.log('Started')
     startButton.classList.add('hide')
+    suffledQuestions = questions.sort(() => Math.random() - .5)
+    currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
     nextQuestion()
 }
 function nextQuestion() {
+    showQuestion(suffledQuestions[currentQuestionIndex])
+}
+function showQuestion(question) {
+    questionElement.innerText = question.question
 }
 function selectAnswer() {
 }
 
 const questions = [
     {
-        question: '',
+        question: 'whats happening',
         amswers: [
-            {text: '', correct: true},
-            {text: '', correct: false},
-            {text: '', correct: false},
-            {text: '', correct: false},
+            {text: 'a', correct: true},
+            {text: 'b', correct: false},
+            {text: 'c', correct: false},
+            {text: 'd', correct: false},
         ]
     }
 ]

@@ -90,7 +90,7 @@ main {
     justify-content: center;
     align-items: center;
 }
-.question {
+#question {
     font-size: 2.5rem;
     margin: 5%;
     color: white;

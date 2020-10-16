@@ -83,7 +83,7 @@ https://www.youtube.com/watch?v=riDzcEQbX6k
 
  4. Testing
 
-    Finally you will have to verify that your site works correctly, attached screenshots of
+    Finally you will have to verify that your site works correctly, attached screen-shots of
     the following browsers. Don't forget to validate your code!
         []   Internet Explorer 11 or higher
         []   Safari in one of its latest versions
@@ -95,9 +95,15 @@ https://www.youtube.com/watch?v=riDzcEQbX6k
 ║││││  │ ││├┤ │││ │ └─┐
 ╩┘└┘└─┘┴─┴┘└─┘┘└┘ ┴ └─┘
 
+15/10/20 - When I added the first functions to the quiz.js the function startQuiz didn't
+           work properly. I searched a solution everywhere, at the end was a type-error.
 
+16/10/20 - When I added the function nextQuestion give me the error "Cannot set property 'innerText' of null".
+           I found the solution here: https://stackoverflow.com/questions/55492691/cannot-set-property-innertext-of-null
+           At the end it was that my script wasn't defer.
 
-
+16/10/20 - Another error after fixing the one before. The problem was that I used a class to refer to .questions. I changed
+           to an id="" and everything works perfect now.
 
 
 
