@@ -10,9 +10,18 @@ nextButton.addEventListener('click', () => {
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answers')
 let shuffledQuestions, currentQuestionIndex
+let score = 0
+let questionCounter = 0
+let availableQuestions = []
+
+const SCORE_POINTS = 125
+const MAX_QUESTIONS = 20
 
 function startQuiz() {
     console.log('Started')
+    questionCounter = 0
+    score = 0
+    availableQuestions = [...questions]
     startButton.classList.add('hide')
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
@@ -53,6 +62,11 @@ function selectAnswer(e) {
         startButton.innerText = 'Scores'
         startButton.classList.remove('hide')
     }
+}
+
+incrementScore = num => {
+    score += num
+    scoreText.innerText = score
 }
 
 const questions = [
