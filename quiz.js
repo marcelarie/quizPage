@@ -2,6 +2,11 @@ const startButton = document.getElementById('button-start')
 const nextButton = document.getElementById('button-next')
 const questionContainerElement = document.getElementById('question-container')
 startButton.addEventListener('click', startQuiz)
+nextButton.addEventListener('click', () => {
+    currentQuestionIndex++
+    nextQuestion()
+})
+
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answers')
 let suffledQuestions, currentQuestionIndex
@@ -40,6 +45,9 @@ function resetState() {
 }
 
 function selectAnswer(e) {
+    const slectedButton = e.target
+    const correct = slectedButton.dataset.correct
+    nextButton.classList.remove('hide')
 }
 
 const questions = [
