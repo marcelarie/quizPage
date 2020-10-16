@@ -1,6 +1,7 @@
 const startButton = document.getElementById('button-start')
 const nextButton = document.getElementById('button-next')
 const questionContainerElement = document.getElementById('question-container')
+const scoreText = document.querySelector('#score');
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
@@ -56,6 +57,9 @@ function resetState() {
 function selectAnswer(e) {
     const slectedButton = e.target
     const correct = slectedButton.dataset.correct
+    if (correct === 'true') {
+        incrementScore(SCORE_POINTS)
+    }
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
     } else {
