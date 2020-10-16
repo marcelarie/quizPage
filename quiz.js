@@ -14,6 +14,7 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = []
 
+
 const SCORE_POINTS = 125
 const MAX_QUESTIONS = 20
 
@@ -67,7 +68,6 @@ function selectAnswer(e) {
         incrementScore(SCORE_POINTS)
     }
 }
-
 
 incrementScore = num => {
     score += num

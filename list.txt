@@ -58,15 +58,30 @@ https://medium.com/@oprearocks/what-do-the-three-dots-mean-in-javascript-bc57494
  ║ │ │   ║║│ │
  ╩ └─┘  ═╩╝└─┘
 
+    17/10/20 CODE:
+    [] Make multiple answers possible
+    [] Show multiple answers when selecting
+    [] Make score counter work one time per question.
+    [] Create nickname input at the start
+    [] Show nickname all the time
+    [] Add score data to the nickname at the end
+    [] Make Final Score board
+    [] Create animations when setting next question
+    [] Create status bar
+    [] 
+
+
+
+
  1. General analysis
     [X] What will the interface be like for the user to carry out this questionnaire.
-    [] Analyze the questions you will ask the user, taking into account that the
+    [X] Analyze the questions you will ask the user, taking into account that the
         answers may have different response formats.
     [] How you will organize the project resources (time, teamwork, resources,
         responsibilities, etc.)
     [] Analyze how you will organize the project at the architecture level so that it is
         scalable and easy to understand.
-    [] Think about questions about real problems in the field of web development that you
+    [X] Think about questions about real problems in the field of web development that you
         consider relevant.
 
  2. Project organization
