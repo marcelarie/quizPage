@@ -67,7 +67,9 @@ https://medium.com/@oprearocks/what-do-the-three-dots-mean-in-javascript-bc57494
     [] Make Final Score board
     [] Create animations when setting next question
     [] Create status bar
-    [] 
+    [X] Hide start button if is no input on the username prompt 
+    [] When answering correctly to a question, change the question 
+       to the next one before pressing next.
 
 
 

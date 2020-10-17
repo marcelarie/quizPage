@@ -4,13 +4,16 @@ const nextButton = document.getElementById('button-next')
 const userName = document.getElementById('nickname')
 const questionContainerElement = document.getElementById('question-container')
 const scoreText = document.querySelector('#score');
+const questionElement = document.getElementById('question')
+const answerButtonsElement = document.getElementById('answers')
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     nextQuestion()
 })
-const questionElement = document.getElementById('question')
-const answerButtonsElement = document.getElementById('answers')
+nickname.addEventListener('keyup', () => {
+    startButton.classList.remove('hide')
+})
 
 let shuffledQuestions, currentQuestionIndex
 let score = 0
@@ -65,6 +68,7 @@ function selectAnswer(e) {
         nextButton.classList.remove('hide')
     } else {
         scoreButton.classList.remove('hide') // show the score button when questions are over
+
     }
     if (correct === 'true') {
         incrementScore(SCORE_POINTS) // if true +125 points
@@ -75,11 +79,19 @@ function selectAnswer(e) {
     }
 }
 
-
 incrementScore = num => {
     score += num
     scoreText.innerText = score
 }
+
+// Username
+//Getting user nickname inside var input
+function inputUser() {
+    var input = document.getElementById("user").value;
+}
+//Score
+
+
 // 20 questions for the quiz here
 const questions = [
     {

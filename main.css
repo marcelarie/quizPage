@@ -116,6 +116,14 @@ main {
     display: flex;
     margin: 0 auto;
 }
+/*highScores*/
+.highScores {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 2.5rem;
+}
 /*hide&show*/
 .hide {
     display: none;
