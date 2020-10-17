@@ -2,9 +2,12 @@ const startButton = document.getElementById('button-start')
 const scoreButton = document.getElementById('button-scores')
 const nextButton = document.getElementById('button-next')
 const userName = document.getElementById('nickname')
+const finalScore = document.getElementById('highScoresList')
 const questionContainerElement = document.getElementById('question-container')
 const scoreText = document.querySelector('#score');
 const questionElement = document.getElementById('question')
+const showUser = document.getElementById('userInput')
+const testO = document.getElementById('user')
 const answerButtonsElement = document.getElementById('answers')
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
@@ -26,6 +29,7 @@ const MAX_QUESTIONS = 20
 
 function startQuiz() {
     console.log('Started')
+    userInp(testO)
     questionCounter = 0
     score = 0
     availableQuestions = [...questions]
@@ -35,6 +39,10 @@ function startQuiz() {
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
     nextQuestion()
+}
+// This is to show the user name when starting the game
+function userInp(inp) {
+    showUser.innerText = document.getElementById('user').value
 }
 function nextQuestion() {
     resetState()
@@ -90,7 +98,10 @@ function inputUser() {
     var input = document.getElementById("user").value;
 }
 //Score
-
+function lastScore() {
+    console.log(score)
+    highScoresList.add += '<li class="your-score">${score} - ${input}</li>';
+}
 
 // 20 questions for the quiz here
 const questions = [
