@@ -10,11 +10,11 @@ nextButton.addEventListener('click', () => {
 })
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answers')
+
 let shuffledQuestions, currentQuestionIndex
 let score = 0
 let questionCounter = 0
 let availableQuestions = []
-
 
 const SCORE_POINTS = 125
 const NEGATIVE_SCORE = -125
@@ -50,7 +50,7 @@ function showQuestion(question) {
 }
 
 function resetState() {
-    nextButton.classList.add('hide')
+    nextButton.classList.add('hide') // after changing question hide next button again
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
@@ -59,17 +59,17 @@ function resetState() {
 function selectAnswer(e) {
     const slectedButton = e.target
     const correct = slectedButton.dataset.correct
-    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    if (shuffledQuestions.length > currentQuestionIndex + 1) { // if are more questions aviable show next button
         nextButton.classList.remove('hide')
     } else {
-        scoreButton.classList.remove('hide')
+        scoreButton.classList.remove('hide') // show the score button when questions are over
     }
     if (correct === 'true') {
-        incrementScore(SCORE_POINTS)
-        resetState()
-        nextButton.classList.remove('hide')
+        incrementScore(SCORE_POINTS) // if true +125 points
+        resetState() // and hide all the questions
+        nextButton.classList.remove('hide') // and show next button ;)
     } else {
-        incrementScore(NEGATIVE_SCORE)
+        incrementScore(NEGATIVE_SCORE) // if fale -125 points
     }
 }
 
@@ -78,6 +78,7 @@ incrementScore = num => {
     score += num
     scoreText.innerText = score
 }
+// 20 questions for the quiz here
 const questions = [
     {
         question: 'What HTML stands for?',
