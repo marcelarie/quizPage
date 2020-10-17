@@ -1,4 +1,5 @@
 const startButton = document.getElementById('button-start')
+const scoreButton = document.getElementById('button-scores')
 const nextButton = document.getElementById('button-next')
 const questionContainerElement = document.getElementById('question-container')
 const scoreText = document.querySelector('#score');
@@ -16,6 +17,7 @@ let availableQuestions = []
 
 
 const SCORE_POINTS = 125
+const NEGATIVE_SCORE = -125
 const MAX_QUESTIONS = 20
 
 function startQuiz() {
@@ -36,7 +38,6 @@ function nextQuestion() {
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
-
         const button = document.createElement('button')
         button.innerText = answer.text
         button.classList.add('bttn')
@@ -61,19 +62,22 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
     } else {
-        startButton.innerText = 'Scores'
-        startButton.classList.remove('hide')
+        scoreButton.classList.remove('hide')
     }
     if (correct === 'true') {
         incrementScore(SCORE_POINTS)
+        resetState()
+        nextButton.classList.remove('hide')
+    } else {
+        incrementScore(NEGATIVE_SCORE)
     }
 }
+
 
 incrementScore = num => {
     score += num
     scoreText.innerText = score
 }
-
 const questions = [
     {
         question: 'What HTML stands for?',
