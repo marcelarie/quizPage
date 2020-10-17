@@ -59,10 +59,9 @@ https://medium.com/@oprearocks/what-do-the-three-dots-mean-in-javascript-bc57494
  ╩ └─┘  ═╩╝└─┘
 
     17/10/20 CODE:
-    [] Make multiple answers possible
-    [] Show multiple answers when selecting
-    [] Make score counter work one time per question.
-    [] Create nickname input at the start
+    [X] Show multiple answers when selecting
+    [X] Make score counter work one time per question.
+    [X] Create nickname input at the start
     [] Show nickname all the time
     [] Add score data to the nickname at the end
     [] Make Final Score board

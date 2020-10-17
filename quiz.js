@@ -1,6 +1,7 @@
 const startButton = document.getElementById('button-start')
 const scoreButton = document.getElementById('button-scores')
 const nextButton = document.getElementById('button-next')
+const userName = document.getElementById('nickname')
 const questionContainerElement = document.getElementById('question-container')
 const scoreText = document.querySelector('#score');
 startButton.addEventListener('click', startQuiz)
@@ -25,7 +26,8 @@ function startQuiz() {
     questionCounter = 0
     score = 0
     availableQuestions = [...questions]
-    startButton.classList.add('hide')
+    startButton.classList.add('hide') // hide start button after starting the quiz
+    userName.classList.add('hide')    // hide username input after starting the quiz
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
