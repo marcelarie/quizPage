@@ -62,11 +62,11 @@ https://medium.com/@oprearocks/what-do-the-three-dots-mean-in-javascript-bc57494
     [X] Show multiple answers when selecting
     [X] Make score counter work one time per question.
     [X] Create nickname input at the start
-    [] Show nickname all the time
+    [X] Show nickname all the time
     [] Add score data to the nickname at the end
     [] Make Final Score board
     [] Create animations when setting next question
-    [] Create status bar
+    [X] Create status bar
     [X] Hide start button if is no input on the username prompt 
     [] When answering correctly to a question, change the question 
        to the next one before pressing next.

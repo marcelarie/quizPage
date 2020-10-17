@@ -20,6 +20,8 @@ main {
 /*fonts*/
 /*Oswald*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/*Piedra*/
+@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
 /*responsive*/
 
 /*main*/
@@ -124,9 +126,30 @@ main {
     color: white;
     font-size: 2.5rem;
 }
+/*username*/
+.user-name {
+    text-align: right;
+}
+#userInput {
+    font-size: 3rem;
+    font-family: 'Piedra', cursive;
+    color: white;
+}
 /*hide&show*/
 .hide {
     display: none;
 }
+/*progressBar*/
+#barra {
+  width: 60%;
+  height: 3rem;
+  background-color: #ddd;
+}
+
+#bar {
+  height: 3rem;
+  background-color: #4CAF50;
+}
+
 
 /*mediaQueries*/

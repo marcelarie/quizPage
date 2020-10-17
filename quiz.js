@@ -22,6 +22,7 @@ let shuffledQuestions, currentQuestionIndex
 let score = 0
 let questionCounter = 0
 let availableQuestions = []
+let number = 0
 
 const SCORE_POINTS = 125
 const NEGATIVE_SCORE = -125
@@ -49,6 +50,8 @@ function nextQuestion() {
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 function showQuestion(question) {
+    console.log(currentQuestionIndex)
+    progressBar()
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
         const button = document.createElement('button')
@@ -297,5 +300,71 @@ const questions = [
 ]
 
 
+var indexBar = document.getElementById("bar")
+// progress bar
+function progressBar() {
+    if (currentQuestionIndex == 0) {
+        indexBar.style.width = "0%";
+    }
+    if (currentQuestionIndex == 1) {
+        indexBar.style.width = "5%";
+    }
+    if (currentQuestionIndex == 2) {
+        indexBar.style.width = "10%";
+    }
+    if (currentQuestionIndex == 3) {
+        indexBar.style.width = "15%";
+    }
+    if (currentQuestionIndex == 4) {
+        indexBar.style.width = "20%";
+    }
+    if (currentQuestionIndex == 5) {
+        indexBar.style.width = "25%";
+    }
+    if (currentQuestionIndex == 6) {
+        indexBar.style.width = "30%";
+    }
+    if (currentQuestionIndex == 7) {
+        indexBar.style.width = "35%";
+    }
+    if (currentQuestionIndex == 8) {
+        indexBar.style.width = "40%";
+    }
+    if (currentQuestionIndex == 9) {
+        indexBar.style.width = "45%";
+    }
+    if (currentQuestionIndex == 10) {
+        indexBar.style.width = "50%";
+    }
+    if (currentQuestionIndex == 11) {
+        indexBar.style.width = "55%";
+    }
+    if (currentQuestionIndex == 12) {
+        indexBar.style.width = "60%";
+    }
+    if (currentQuestionIndex == 13) {
+        indexBar.style.width = "65%";
+    }
+    if (currentQuestionIndex == 14) {
+        indexBar.style.width = "70%";
+    }
+    if (currentQuestionIndex == 15) {
+        indexBar.style.width = "75%";
+    }
+    if (currentQuestionIndex == 16) {
+        indexBar.style.width = "80%";
+    }
+    if (currentQuestionIndex == 17) {
+        indexBar.style.width = "85%";
+    }
+    if (currentQuestionIndex == 18) {
+        indexBar.style.width = "90%";
+    }
+    if (currentQuestionIndex == 19) {
+        indexBar.style.width = "95%";
+    }
+    if (currentQuestionIndex == 20) {
+        indexBar.style.width = "100%";
+    }
 
-
+}
