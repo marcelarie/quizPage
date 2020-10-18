@@ -224,10 +224,10 @@ main {
 .theBigGif {
     position: absolute;
     top: 30%;
-    left: 40%;
+    left: 30%;
 }
 #big-applause {
-    min-width: 300px;
+    width: 550px;
 }
 
 /* Bounce in left */
