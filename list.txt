@@ -31,7 +31,7 @@ https://www.youtube.com/watch?v=zHUpx90NerM
 [] 5. After answering each question the result will be stored in memory.
 [X] 7. The first screen that will be shown as you can see in the wireframe will ask
     the user for a nickname.
-[] 8. All the evolutionary will be carried out memory and without a database, using
+[X] 8. All the evolutionary will be carried out memory and without a database, using
      HTML, CSS and Javascript (NO third-party libraries can be used)
 [X] 9. Write clear and concise commits, should not extend more than 50 characters.
 [X] 10. It has to be responsive and you must get it without using third-party libraries.
@@ -54,7 +54,7 @@ https://www.youtube.com/watch?v=zHUpx90NerM
 [] 18. For the project documentation a PDF version is required within the repository
 [X] 19. You should try as much as possible that the commits and planned tasks are
      the same
-[] 20. Delete unused files
+[X] 20. Delete unused files
 
 
 ╔╦╗┌─┐  ╔╦╗┌─┐
@@ -68,12 +68,12 @@ https://www.youtube.com/watch?v=zHUpx90NerM
     [X] Show nickname all the time
     [] Add score data to the nickname at the end
     [] Make Final Score board
-    [] Create animations when setting next question
+    [X] Create animations when setting next question
     [X] Create status bar
     [X] Hide start button if is no input on the username prompt 
     [X] When answering correctly to a question, change the question 
        to the next one before pressing next.
-    [] Gif with applause between questions
+    [X] Gif with applause between questions
 
 
  1. General analysis

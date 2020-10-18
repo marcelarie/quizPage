@@ -82,7 +82,7 @@ function nextQuestion() {
 // hide and show buttons every question/answers 
 function showQuestion(question) {
     progressBar()
-    randomApplause(arrayGif)
+    randomApplause(arrayGif) // activation random gif
     document.getElementById('none').setAttribute('id', 'content'); //animation restart
     questionElement.innerText = question.question
     if (questionElement.classList.contains('hide')) {
@@ -145,15 +145,17 @@ function lastScore() {
     highScoresList.add += '<li class="your-score">${score} - ${input}</li>';
 }
 
-
 // random gif array
 let arrayGif = ["gif/3d.gif", "gif/cong.gif", "gif/joker.gif", "gif/animated.gif", "gif/drake.gif", "gif/applause-11.gif", "gif/gente2.gif", "gif/orange.gif", "gif/applause-22.gif", "gif/gente3.gif", "gif/rabbit.gif", "gif/applause.gif", "gif/gente4.gif", "gif/robert.gif", "gif/ball.gif", "gif/gente.gif", "gif/slender.gif", "gif/blanca.gif", "gif/gifki-aplodismenti-1.gif", "gif/trump.gif",
     "gif/bnw.gif", "gif/job.gif", "gif/wow.gif"]
-
+//random gif function
+let currentGifIndex = 0
 function randomApplause(inp) {
-    const randomGif = inp[Math.floor(Math.random() * inp.length)];
-    document.getElementById('big-applause').setAttribute('src', randomGif); // random gif activation
+    currentGifIndex++;
+    sortedGif = inp.sort(() => Math.random() - .5)
+    document.getElementById('big-applause').setAttribute('src', sortedGif[currentGifIndex]); // random gif activation
 }
+
 // 20 questions for the quiz here
 const questions = [
     {
