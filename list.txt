@@ -28,7 +28,7 @@ https://www.youtube.com/watch?v=zHUpx90NerM
 [X] 4. The progress bar will be divided into sections (eg, HTML, CSS, JS ...) and
     should be updated dynamically each time a question is answered using a
     CSS3 animation.
-[] 5. After answering each question the result will be stored in memory.
+[X] 5. After answering each question the result will be stored in memory.
 [X] 7. The first screen that will be shown as you can see in the wireframe will ask
     the user for a nickname.
 [X] 8. All the evolutionary will be carried out memory and without a database, using
@@ -37,7 +37,7 @@ https://www.youtube.com/watch?v=zHUpx90NerM
 [X] 10. It has to be responsive and you must get it without using third-party libraries.
 [X] 11. When moving from one question to another, an animation made with CSS3
      will be displayed.
-[] 12. At the end of the questionnaire, you should show a final screen with your
+[X] 12. At the end of the questionnaire, you should show a final screen with your
      result and the final ranking indicating your score and that of the other records
      that have been previously made. The ranking table will be filled in with the
      records stored in memory. This table can be ordered from highest to lowest
@@ -74,7 +74,8 @@ https://www.youtube.com/watch?v=zHUpx90NerM
     [X] When answering correctly to a question, change the question 
        to the next one before pressing next.
     [X] Gif with applause between questions
-
+    [] Add a replay button
+    [] Make the hides and shows more fluid 
 
  1. General analysis
     [X] What will the interface be like for the user to carry out this questionnaire.
