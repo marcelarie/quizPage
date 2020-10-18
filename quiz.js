@@ -1,3 +1,6 @@
+// title
+const theBigText = document.getElementById('theBigText')
+
 // controls
 const startButton = document.getElementById('button-start')
 const scoreButton = document.getElementById('button-scores')
@@ -58,6 +61,7 @@ function startQuiz() {
     htmlIndiv.classList.remove('hide')
     cssIndiv.classList.remove('hide')
     jsIndiv.classList.remove('hide')
+    theBigText.classList.add('hide')
 }
 
 // This is to show the user name when starting the game
@@ -111,7 +115,7 @@ function selectAnswer(e) {
         incrementScore(SCORE_POINTS) // if true +125 points
         resetState() // and hide all the questions
         nextButton.classList.remove('hide') // and show next button ;)
-        questionElement.classList.add('hide') // and show next button ;)
+        questionElement.classList.add('hide')
     } else {
         incrementScore(NEGATIVE_SCORE) // if fale -125 points
     }

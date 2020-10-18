@@ -29,7 +29,12 @@ main {
     font-size: 9vw;
     color: white;
     text-align: center;
-
+    position: absolute;
+    top: 10%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
 }
 /*buttons*/
 .bttn {
@@ -55,11 +60,17 @@ main {
     gap: 5px;
 }
 .controls {
-    margin: 15px;
     gap: 1em;
     align-items: center;
     justify-content: center;
     display: flex;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 25%;
 }
 .controls button {
     padding: 10px 20px;
@@ -77,8 +88,10 @@ main {
 }
 #button-next {
     border-radius: 0.3em;
-    position: absolute;
     background-color: #C7712A;
+}
+.button-next-center {
+
 }
 /*questions*/
 #question-container {
@@ -88,8 +101,8 @@ main {
     align-items: center;
 }
 #question {
-    font-size: 2.5rem;
-    margin: 5%;
+    font-size: 3rem;
+    margin-bottom: 5%;
     color: white;
     text-align: center;
 }
@@ -171,7 +184,7 @@ main {
 #css {
     position: absolute;
     bottom: 7%;
-    left: 35%;
+    left: 40%;
 }
 #js {
     position: absolute;
