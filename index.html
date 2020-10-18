@@ -7,7 +7,8 @@
     <meta name="description" content="Quiz project for Assembler School 2020">
     <meta name="author" content="Marcel Arie">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css?v=1.0">
     <script defer src="quiz.js"></script>
     <title>The Big Quiz!</title>
@@ -30,10 +31,11 @@
             <img id="css" class="logo hide" src="img/css.png" alt="css3">
             <img id="js" class="logo hide" src="img/js.png" alt="js">
         </div>
-        <div class="container hide">
-            <div id="the-end" class="highScores">
+        <div class="container ">
+            <div id="the-end" class="highScores hide">
                 <h1>Leaderboard</h1>
-                <ul id="highScoresList"></ul>
+                <ul id="highScoresList">
+                </ul>
             </div>
         </div>
         <div class="username" id="nickname">
@@ -68,7 +70,6 @@
         <div class="controls">
             <button id="button-start" class="bttn hide">Start</button>
             <button id="button-next" class="bttn button-next hide">Next</button>
-            <button id="button-scores" class="bttn hide">Scores</button>
         </div>
 
         <body>

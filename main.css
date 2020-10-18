@@ -133,7 +133,17 @@ main {
     display: flex;
     align-items: center;
     color: white;
-    font-size: 2.5rem;
+    font-size: 5rem;
+}
+#highScoresList {
+    position: absolute;
+    top: 50%;
+    font-family: 'Fredoka One', cursive;
+    color:peru;
+}
+.highScores h1 {
+    font-family: 'Piedra', cursive;
+    color: gold;
 }
 /*username*/
 .user-name {
@@ -142,7 +152,6 @@ main {
 #userInput {
     font-size: 3rem;
     font-family: 'Piedra', cursive;
-    font-weight: bold;
     color: white;
 }
 /*hide&show*/
