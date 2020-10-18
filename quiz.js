@@ -53,6 +53,9 @@ function showQuestion(question) {
     console.log(currentQuestionIndex)
     progressBar()
     questionElement.innerText = question.question
+    if (questionElement.classList.contains('hide')) {
+        questionElement.classList.remove('hide');
+    }
     question.answers.forEach(answer => {
         const button = document.createElement('button')
         button.innerText = answer.text
@@ -85,6 +88,7 @@ function selectAnswer(e) {
         incrementScore(SCORE_POINTS) // if true +125 points
         resetState() // and hide all the questions
         nextButton.classList.remove('hide') // and show next button ;)
+        questionElement.classList.add('hide') // and show next button ;)
     } else {
         incrementScore(NEGATIVE_SCORE) // if fale -125 points
     }
