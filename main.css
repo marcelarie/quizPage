@@ -220,6 +220,16 @@ main {
     }
 }
 
+/*the final applause*/
+.theBigGif {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+#big-applause {
+    min-width: 300px;
+}
+
 /* Bounce in left */
 #content {
     position: relative;
