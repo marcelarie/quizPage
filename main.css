@@ -191,3 +191,18 @@ main {
 
 
 /*mediaQueries*/
+@media screen and (max-width: 960px) {
+    #html, #css, #js {
+        max-width: 10%;
+        bottom: 8.5%;
+    }
+}
+@media screen and (max-width: 810px) {
+    #html, #css, #js {
+        max-width: 13%;
+        bottom: 9%;
+    }
+    #barra, #bar {
+        height: 2rem;
+    }
+}
