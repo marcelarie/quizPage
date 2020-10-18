@@ -25,6 +25,12 @@ const cssIndiv = document.getElementById('css')
 const jsIndiv = document.getElementById('js')
 const theBar = document.getElementById('theBarra')
 
+// random gif",
+let arrayGif = ["gif/3d.gif", "gif/cong.gif", "gif/joker.gif", "gif/animated.gif", "gif/drake.gif", "gif/leo.gif", "gif/applause-11.gif", "gif/gente2.gif", "gif/orange.gif", "gif/applause-22.gif", "gif/gente3.gif", "gif/rabbit.gif", "gif/applause.gif", "gif/gente4.gif", "gif/robert.gif", "gif/ball.gif", "gif/gente.gif", "gif/slender.gif", "gif/blanca.gif", "gif/gifki-aplodismenti-1.gif", "gif/trump.gif",
+    "gif/bnw.gif", "gif/job.gif", "gif/wow.gif"]
+const randomGif = arrayGif[Math.floor(Math.random() * arrayGif.length)];
+console.log(randomGif)
+
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
@@ -33,6 +39,8 @@ nextButton.addEventListener('click', () => {
 nickname.addEventListener('keyup', () => {
     startButton.classList.remove('hide')
 })
+
+
 
 let shuffledQuestions, currentQuestionIndex
 let score = 0
@@ -80,6 +88,7 @@ function showQuestion(question) {
     progressBar()
     //place for animation restart
     document.getElementById('none').setAttribute('id', 'content');
+    document.getElementById('big-applause').setAttribute('src', randomGif);
     questionElement.innerText = question.question
     if (questionElement.classList.contains('hide')) {
         questionElement.classList.remove('hide');
