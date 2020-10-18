@@ -25,6 +25,10 @@ const cssIndiv = document.getElementById('css')
 const jsIndiv = document.getElementById('js')
 const theBar = document.getElementById('theBarra')
 
+//score
+const theScore = document.getElementById('score');
+const mostRecentScore = localStorage.getItem('mostRecentScore');
+theScore.innerText = mostRecentScore;
 
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
@@ -82,7 +86,7 @@ function nextQuestion() {
 // hide and show buttons every question/answers 
 function showQuestion(question) {
     progressBar()
-    randomApplause(arrayGif) // activation random gif
+    randomApplause(arrayGif)
     document.getElementById('none').setAttribute('id', 'content'); //animation restart
     questionElement.innerText = question.question
     if (questionElement.classList.contains('hide')) {
@@ -115,6 +119,7 @@ function selectAnswer(e) {
     if (questions.length > currentQuestionIndex + 1) { // if are more questions aviable show next button
     } else {
         scoreButton.classList.remove('hide') // show the score button when questions are over
+        localStorage.setItem('mostRecentScore', score); // saving score on localStorage 
     }
     if (correct === 'true') {
         incrementScore(SCORE_POINTS) // if true +125 points
@@ -144,6 +149,20 @@ function lastScore() {
     console.log(score)
     highScoresList.add += '<li class="your-score">${score} - ${input}</li>';
 }
+saveHighScore = (e) => {
+    e.preventDefault();
+
+    const score = {
+        score: mostRecentScore,
+        name: username.value,
+    };
+    highScores.push(score);
+    highScores.sort((a, b) => b.score - a.score);
+    highScores.splice(5);
+
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+    window.location.assign('/');
+};
 
 // random gif array
 let arrayGif = ["gif/3d.gif", "gif/cong.gif", "gif/joker.gif", "gif/animated.gif", "gif/drake.gif", "gif/applause-11.gif", "gif/gente2.gif", "gif/orange.gif", "gif/applause-22.gif", "gif/gente3.gif", "gif/rabbit.gif", "gif/applause.gif", "gif/gente4.gif", "gif/robert.gif", "gif/ball.gif", "gif/gente.gif", "gif/slender.gif", "gif/blanca.gif", "gif/gifki-aplodismenti-1.gif", "gif/trump.gif",
