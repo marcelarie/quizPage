@@ -9,6 +9,11 @@ const questionElement = document.getElementById('question')
 const showUser = document.getElementById('userInput')
 const nickName = document.getElementById('user')
 const answerButtonsElement = document.getElementById('answers')
+const logoQuest = document.getElementById('logos')
+const htmlIndiv = document.getElementById('html')
+const cssIndiv = document.getElementById('css')
+const jsIndiv = document.getElementById('js')
+const theBar = document.getElementById('theBarra')
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
@@ -38,6 +43,11 @@ function startQuiz() {
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
     nextQuestion()
+    logoQuest.classList.remove('hide')
+    theBar.classList.remove('hide')
+    htmlIndiv.classList.remove('hide')
+    cssIndiv.classList.remove('hide')
+    jsIndiv.classList.remove('hide')
 }
 // This is to show the user name when starting the game
 function userInp() {

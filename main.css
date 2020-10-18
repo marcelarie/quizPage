@@ -198,6 +198,9 @@ main {
     }
 }
 @media screen and (max-width: 810px) {
+    * {
+        font-size: 80%;
+    }
     #html, #css, #js {
         max-width: 13%;
         bottom: 9%;
