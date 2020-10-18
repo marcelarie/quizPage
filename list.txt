@@ -1,38 +1,41 @@
 ╦┌┐┌┌─┐┌─┐┬┬─┐┌─┐┌┬┐┬┌─┐┌┐┌
 ║│││└─┐├─┘│├┬┘├─┤ │ ││ ││││
 ╩┘└┘└─┘┴  ┴┴└─┴ ┴ ┴ ┴└─┘┘└┘
-Complete Quiz Project Tutorial
+Complete Quiz Project Tutorials
 https://www.youtube.com/watch?v=riDzcEQbX6k
-
+https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript/tree/master/Quiz%20App%20Master
 ╦═╗┌─┐┌─┐┌─┐┬ ┬┬─┐┌─┐┌─┐┌─┐
 ╠╦╝├┤ └─┐│ ││ │├┬┘│  ├┤ └─┐
 ╩╚═└─┘└─┘└─┘└─┘┴└─└─┘└─┘└─┘
 https://medium.com/@oprearocks/what-do-the-three-dots-mean-in-javascript-bc5749439c9a
+CSS3 animations:
+https://www.youtube.com/watch?v=zHUpx90NerM
+
 
 
 ╦═╗┌─┐┌─┐ ┬ ┬┬┬─┐┌─┐┌┬┐┌─┐┌┐┌┌┬┐┌─┐
 ╠╦╝├┤ │─┼┐│ ││├┬┘├┤ │││├┤ │││ │ └─┐
 ╩╚═└─┘└─┘└└─┘┴┴└─└─┘┴ ┴└─┘┘└┘ ┴ └─┘
 
-[] 1. The questionnaire will have to contain at least 20 questions.
-[] 2. The format of the answers can be divided into:
-    [] Select single answer from multiple options (radio)
+[X] 1. The questionnaire will have to contain at least 20 questions.
+[X] 2. The format of the answers can be divided into:
+    [X] Select single answer from multiple options (radio)
     [] Select multiple answers (checkbox)
     [] Select from a drop-down menu
-[] 3. There will be a progress bar that will measure the percentage of questions
+[X] 3. There will be a progress bar that will measure the percentage of questions
     answered with respect to the total (this bar should be displayed on all pages
     and should be updated after answering each question).
-[] 4. The progress bar will be divided into sections (eg, HTML, CSS, JS ...) and
+[X] 4. The progress bar will be divided into sections (eg, HTML, CSS, JS ...) and
     should be updated dynamically each time a question is answered using a
     CSS3 animation.
 [] 5. After answering each question the result will be stored in memory.
-[] 7. The first screen that will be shown as you can see in the wireframe will ask
+[X] 7. The first screen that will be shown as you can see in the wireframe will ask
     the user for a nickname.
 [] 8. All the evolutionary will be carried out memory and without a database, using
      HTML, CSS and Javascript (NO third-party libraries can be used)
-[] 9. Write clear and concise commits, should not extend more than 50 characters.
-[] 10. It has to be responsive and you must get it without using third-party libraries.
-[] 11. When moving from one question to another, an animation made with CSS3
+[X] 9. Write clear and concise commits, should not extend more than 50 characters.
+[X] 10. It has to be responsive and you must get it without using third-party libraries.
+[X] 11. When moving from one question to another, an animation made with CSS3
      will be displayed.
 [] 12. At the end of the questionnaire, you should show a final screen with your
      result and the final ranking indicating your score and that of the other records
@@ -40,16 +43,16 @@ https://medium.com/@oprearocks/what-do-the-three-dots-mean-in-javascript-bc57494
      records stored in memory. This table can be ordered from highest to lowest
      score by a button. When refresh the page all information are cleaned and
      ranking are empty. ( Show the correct message for the user )
-[] 13. All code included comments need to be write in English
-[] 14. Use a code style like camelCase
-[] 15. In the case of using HTML never use inline styles
-[] 16. In the case of using different programming language always define the
+[X] 13. All code included comments need to be write in English
+[X] 14. Use a code style like camelCase
+[X] 15. In the case of using HTML never use inline styles
+[-] 16. In the case of using different programming language always define the
      implementation in separate terms
-[] 17. It is recommended to divide the tasks into several subtasks so that you can
+[X] 17. It is recommended to divide the tasks into several subtasks so that you can
      associate each particular step of the construction with a specific
      commitment.
 [] 18. For the project documentation a PDF version is required within the repository
-[] 19. You should try as much as possible that the commits and planned tasks are
+[X] 19. You should try as much as possible that the commits and planned tasks are
      the same
 [] 20. Delete unused files
 
@@ -70,6 +73,7 @@ https://medium.com/@oprearocks/what-do-the-three-dots-mean-in-javascript-bc57494
     [X] Hide start button if is no input on the username prompt 
     [X] When answering correctly to a question, change the question 
        to the next one before pressing next.
+    [] Gif with applause between questions
 
 
  1. General analysis

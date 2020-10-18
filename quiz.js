@@ -79,6 +79,7 @@ function nextQuestion() {
 function showQuestion(question) {
     progressBar()
     //place for animation restart
+    document.getElementById('none').setAttribute('id', 'content');
     questionElement.innerText = question.question
     if (questionElement.classList.contains('hide')) {
         questionElement.classList.remove('hide');
@@ -116,6 +117,7 @@ function selectAnswer(e) {
         resetState() // and hide all the questions
         nextButton.classList.remove('hide') // and show next button ;)
         questionElement.classList.add('hide')
+        document.getElementById('content').setAttribute('id', 'none'); // taking value from animation again to give it back later
     } else {
         incrementScore(NEGATIVE_SCORE) // if fale -125 points
     }

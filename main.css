@@ -223,8 +223,8 @@ main {
 /* Bounce in left */
 #content {
     position: relative;
-    animation-name:none;
-    animation-duration: 2s;
+    animation-name: content;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
