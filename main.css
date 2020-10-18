@@ -22,7 +22,6 @@ main {
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 /*Piedra*/
 @import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');
-/*responsive*/
 
 /*main*/
 .big-text h1 {
@@ -90,9 +89,6 @@ main {
     border-radius: 0.3em;
     background-color: #C7712A;
 }
-.button-next-center {
-
-}
 /*questions*/
 #question-container {
     border-radius: 3vh;
@@ -146,6 +142,7 @@ main {
 #userInput {
     font-size: 3rem;
     font-family: 'Piedra', cursive;
+    font-weight: bold;
     color: white;
 }
 /*hide&show*/
@@ -222,3 +219,17 @@ main {
         height: 2rem;
     }
 }
+
+/* Bounce in left */
+#content {
+    position: relative;
+    animation-name:none;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes content{
+    0%   {left: -1000px;}
+    100% {left: 0;}
+}
+    

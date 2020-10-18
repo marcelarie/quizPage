@@ -78,6 +78,7 @@ function nextQuestion() {
 // hide and show buttons every question/answers 
 function showQuestion(question) {
     progressBar()
+    //place for animation restart
     questionElement.innerText = question.question
     if (questionElement.classList.contains('hide')) {
         questionElement.classList.remove('hide');
@@ -107,7 +108,6 @@ function selectAnswer(e) {
     const slectedButton = e.target
     const correct = slectedButton.dataset.correct
     if (questions.length > currentQuestionIndex + 1) { // if are more questions aviable show next button
-        nextButton.classList.remove('hide')
     } else {
         scoreButton.classList.remove('hide') // show the score button when questions are over
     }
