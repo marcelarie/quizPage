@@ -140,11 +140,43 @@ main {
     display: none;
 }
 /*progressBar*/
-.progress {
+.theBar {
     position: absolute;
-    display: flex;
-    bottom: 0;
+    width: 70vw;
+    bottom: 10%;
+    left: 20%;
+    
+}
+.progress {
     align-items: center;
+}
+.logo-questions {
+    display: flex;
+    width: 70vw;
+    bottom: 10%;
+    left: 20%;
+}
+.logo {
+    flex: 1;
+    max-width:7rem;
+    position: relative;
+    height: auto;
+}
+
+#html {
+    position: absolute;
+    bottom:7%;
+    left: 25%;
+}
+#css {
+    position: absolute;
+    bottom: 7%;
+    left: 35%;
+}
+#js {
+    position: absolute;
+    bottom: 7%;
+    left: 54%;
 }
 #barra {
   width: 60%;
