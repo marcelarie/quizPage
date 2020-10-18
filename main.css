@@ -200,26 +200,6 @@ main {
 }
 
 
-/*mediaQueries*/
-@media screen and (max-width: 960px) {
-    #html, #css, #js {
-        max-width: 10%;
-        bottom: 8.5%;
-    }
-}
-@media screen and (max-width: 810px) {
-    * {
-        font-size: 80%;
-    }
-    #html, #css, #js {
-        max-width: 13%;
-        bottom: 9%;
-    }
-    #barra, #bar {
-        height: 2rem;
-    }
-}
-
 /*the final applause*/
 .theBigGif {
     position: absolute;
@@ -243,3 +223,32 @@ main {
     100% {left: 0;}
 }
     
+/*mediaQueries*/
+@media screen and (max-width: 960px) {
+    #html, #css, #js {
+        max-width: 10%;
+        bottom: 8.5%;
+    }
+}
+@media screen and (max-width: 810px) {
+    * {
+        font-size: 80%;
+    }
+    #html, #css, #js {
+        max-width: 13%;
+        bottom: 9%;
+    }
+    #barra, #bar {
+        height: 2rem;
+    }
+}
+@media screen and (max-width: 1201px) {
+    .theBigGif {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+    #big-applause {
+        width: 100vw;
+    }
+}

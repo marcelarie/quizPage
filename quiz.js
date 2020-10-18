@@ -76,6 +76,7 @@ function userInp() {
 function nextQuestion() {
     resetState()
     showQuestion(questions[currentQuestionIndex])
+    document.getElementById('applause').classList.add('hide') // hiding random gif
 }
 
 // hide and show buttons every question/answers 
@@ -121,6 +122,7 @@ function selectAnswer(e) {
         nextButton.classList.remove('hide') // and show next button ;)
         questionElement.classList.add('hide')
         document.getElementById('content').setAttribute('id', 'none'); // taking value from animation again to give it back later
+        document.getElementById('applause').classList.remove('hide')
     } else {
         incrementScore(NEGATIVE_SCORE) // if fale -125 points
     }
@@ -144,7 +146,7 @@ function lastScore() {
 }
 
 
-// random gif",
+// random gif array
 let arrayGif = ["gif/3d.gif", "gif/cong.gif", "gif/joker.gif", "gif/animated.gif", "gif/drake.gif", "gif/applause-11.gif", "gif/gente2.gif", "gif/orange.gif", "gif/applause-22.gif", "gif/gente3.gif", "gif/rabbit.gif", "gif/applause.gif", "gif/gente4.gif", "gif/robert.gif", "gif/ball.gif", "gif/gente.gif", "gif/slender.gif", "gif/blanca.gif", "gif/gifki-aplodismenti-1.gif", "gif/trump.gif",
     "gif/bnw.gif", "gif/job.gif", "gif/wow.gif"]
 
