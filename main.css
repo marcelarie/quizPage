@@ -140,6 +140,12 @@ main {
     display: none;
 }
 /*progressBar*/
+.progress {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    align-items: center;
+}
 #barra {
   width: 60%;
   height: 3rem;

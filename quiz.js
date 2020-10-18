@@ -29,14 +29,12 @@ const NEGATIVE_SCORE = -125
 const MAX_QUESTIONS = 20
 
 function startQuiz() {
-    console.log('Started')
     userInp()
     questionCounter = 0
     score = 0
     availableQuestions = [...questions]
     startButton.classList.add('hide') // hide start button after starting the quiz
     userName.classList.add('hide')    // hide username input after starting the quiz
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     questionContainerElement.classList.remove('hide')
     nextQuestion()
@@ -47,7 +45,7 @@ function userInp() {
 }
 function nextQuestion() {
     resetState()
-    showQuestion(shuffledQuestions[currentQuestionIndex])
+    showQuestion(questions[currentQuestionIndex])
 }
 function showQuestion(question) {
     console.log(currentQuestionIndex)
@@ -78,7 +76,7 @@ function resetState() {
 function selectAnswer(e) {
     const slectedButton = e.target
     const correct = slectedButton.dataset.correct
-    if (shuffledQuestions.length > currentQuestionIndex + 1) { // if are more questions aviable show next button
+    if (questions.length > currentQuestionIndex + 1) { // if are more questions aviable show next button
         nextButton.classList.remove('hide')
     } else {
         scoreButton.classList.remove('hide') // show the score button when questions are over
@@ -122,6 +120,14 @@ const questions = [
         ]
     },
     {
+        question: 'What is the correct HTML element for inserting a line break?',
+        answers: [
+            {text: '<break>', correct: false},
+            {text: '<lb>', correct: false},
+            {text: '<br>', correct: true},
+        ]
+    },
+    {
         question: 'How to link two HTML files together',
         answers: [
             {text: '<a href="folder/file.html">Link text name</a>', correct: true},
@@ -131,21 +137,21 @@ const questions = [
         ]
     },
     {
-        question: 'Wich one of this languages its low level?',
+        question: 'How do we write "Hello World" in an alert box',
         answers: [
-            {text: 'C', correct: false},
-            {text: 'Machine code', correct: true},
-            {text: 'Java', correct: false},
-            {text: 'HTML', correct: false},
+            {text: 'msg("Hello World")', correct: false},
+            {text: 'alert("Hello World")', correct: true},
+            {text: 'show("Hello World")', correct: false},
+            {text: 'print("Hello World")', correct: false},
         ]
     },
     {
-        question: 'What OOP stand for? ',
+        question: 'What is the correct syntax for referring to an external script called "xxx.js"?',
         answers: [
-            {text: 'On October we Program', correct: false},
-            {text: 'Object Oriented Program', correct: false},
-            {text: 'Object Oriented Programming', correct: true},
-            {text: 'Is taken from the basketball term alley-oop.', correct: false},
+            {text: '<script src="main.js">', correct: true},
+            {text: '<script defer src="main.js">', correct: true},
+            {text: '<script url="main.js">', correct: false},
+            {text: '<script href="main.js">', correct: false},
         ]
     },
     {
@@ -175,29 +181,38 @@ const questions = [
         ]
     },
     {
+        question: 'Which is the correct CSS syntax?',
+        answers: [
+            {text: 'body {color: black;}', correct: true},
+            {text: 'body [color; black;]', correct: false},
+            {text: 'body [color; black;}', correct: false},
+            {text: 'body {color: black}', correct: false},
+        ]
+    },
+    {
+        question: 'Which CSS property controls the text size?',
+        answers: [
+            {text: 'font', correct: false},
+            {text: 'font-size', correct: true},
+            {text: 'text-size', correct: false},
+            {text: 'text-style', correct: false},
+        ]
+    },
+    {
+        question: 'Which property is used to change the font of an element?',
+        answers: [
+            {text: 'font-style', correct: false},
+            {text: 'font-family', correct: true},
+            {text: 'font-wigth', correct: false},
+        ]
+    },
+    {
         question: 'How can be executed JavaScript?',
         answers: [
             {text: 'Can be executed inside a web browser.', correct: true},
             {text: 'Can be executed inside any terminal.', correct: false},
             {text: 'Can be executed using Node.js', correct: true},
             {text: 'It only can be executed in Linux', correct: false},
-        ]
-    },
-    {
-        question: 'Who is making the Web standards?',
-        answers: [
-            {text: 'The World Wide Web', correct: true},
-            {text: 'Microsoft', correct: false},
-            {text: 'Mozilla', correct: false},
-            {text: 'Google', correct: false},
-        ]
-    },
-    {
-        question: 'What is the correct HTML element for inserting a line break?',
-        answers: [
-            {text: '<break>', correct: false},
-            {text: '<lb>', correct: false},
-            {text: '<br>', correct: true},
         ]
     },
     {
@@ -233,50 +248,6 @@ const questions = [
         ]
     },
     {
-        question: 'Which is the correct CSS syntax?',
-        answers: [
-            {text: 'body {color: black;}', correct: true},
-            {text: 'body [color; black;]', correct: false},
-            {text: 'body [color; black;}', correct: false},
-            {text: 'body {color: black}', correct: false},
-        ]
-    },
-    {
-        question: 'Which CSS property controls the text size?',
-        answers: [
-            {text: 'font', correct: false},
-            {text: 'font-size', correct: true},
-            {text: 'text-size', correct: false},
-            {text: 'text-style', correct: false},
-        ]
-    },
-    {
-        question: 'Which property is used to change the font of an element?',
-        answers: [
-            {text: 'font-style', correct: false},
-            {text: 'font-family', correct: true},
-            {text: 'font-wigth', correct: false},
-        ]
-    },
-    {
-        question: 'How do we write "Hello World" in an alert box',
-        answers: [
-            {text: 'msg("Hello World")', correct: false},
-            {text: 'alert("Hello World")', correct: true},
-            {text: 'show("Hello World")', correct: false},
-            {text: 'print("Hello World")', correct: false},
-        ]
-    },
-    {
-        question: 'What is the correct syntax for referring to an external script called "xxx.js"?',
-        answers: [
-            {text: '<script src="main.js">', correct: true},
-            {text: '<script defer src="main.js">', correct: true},
-            {text: '<script url="main.js">', correct: false},
-            {text: '<script href="main.js">', correct: false},
-        ]
-    },
-    {
         question: 'What is the correct way to write a JavaScript array?',
         answers: [
             {text: 'var colors = "red","blue","green"', correct: false},
@@ -299,6 +270,33 @@ const questions = [
             {text: '=', correct: true},
             {text: '*', correct: false},
             {text: '==', correct: false},
+        ]
+    },
+    {
+        question: 'Wich one of this languages its low level?',
+        answers: [
+            {text: 'C', correct: false},
+            {text: 'Machine code', correct: true},
+            {text: 'Java', correct: false},
+            {text: 'HTML', correct: false},
+        ]
+    },
+    {
+        question: 'What OOP stand for? ',
+        answers: [
+            {text: 'On October we Program', correct: false},
+            {text: 'Object Oriented Program', correct: false},
+            {text: 'Object Oriented Programming', correct: true},
+            {text: 'Is taken from the basketball term alley-oop.', correct: false},
+        ]
+    },
+    {
+        question: 'Who is making the Web standards?',
+        answers: [
+            {text: 'The World Wide Web', correct: true},
+            {text: 'Microsoft', correct: false},
+            {text: 'Mozilla', correct: false},
+            {text: 'Google', correct: false},
         ]
     },
 ]
