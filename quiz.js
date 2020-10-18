@@ -1,19 +1,27 @@
+// controls
 const startButton = document.getElementById('button-start')
 const scoreButton = document.getElementById('button-scores')
 const nextButton = document.getElementById('button-next')
+
+// user name and scores
 const userName = document.getElementById('nickname')
 const finalScore = document.getElementById('highScoresList')
-const questionContainerElement = document.getElementById('question-container')
 const scoreText = document.querySelector('#score');
-const questionElement = document.getElementById('question')
 const showUser = document.getElementById('userInput')
 const nickName = document.getElementById('user')
+
+// question related
+const questionContainerElement = document.getElementById('question-container')
+const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answers')
+
+// logos and progress bar
 const logoQuest = document.getElementById('logos')
 const htmlIndiv = document.getElementById('html')
 const cssIndiv = document.getElementById('css')
 const jsIndiv = document.getElementById('js')
 const theBar = document.getElementById('theBarra')
+
 startButton.addEventListener('click', startQuiz)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
@@ -29,10 +37,12 @@ let questionCounter = 0
 let availableQuestions = []
 let number = 0
 
+// score related
 const SCORE_POINTS = 125
 const NEGATIVE_SCORE = -125
 const MAX_QUESTIONS = 20
 
+// start of the quiz
 function startQuiz() {
     userInp()
     questionCounter = 0
@@ -49,16 +59,20 @@ function startQuiz() {
     cssIndiv.classList.remove('hide')
     jsIndiv.classList.remove('hide')
 }
+
 // This is to show the user name when starting the game
 function userInp() {
     showUser.innerText = document.getElementById('user').value
 }
+
+// next question
 function nextQuestion() {
     resetState()
     showQuestion(questions[currentQuestionIndex])
 }
+
+// hide and show buttons every question/answers 
 function showQuestion(question) {
-    console.log(currentQuestionIndex)
     progressBar()
     questionElement.innerText = question.question
     if (questionElement.classList.contains('hide')) {
@@ -76,6 +90,7 @@ function showQuestion(question) {
     })
 }
 
+// remove old question and answers
 function resetState() {
     nextButton.classList.add('hide') // after changing question hide next button again
     while (answerButtonsElement.firstChild) {
@@ -83,6 +98,7 @@ function resetState() {
     }
 }
 
+// what to do when an answer is selected
 function selectAnswer(e) {
     const slectedButton = e.target
     const correct = slectedButton.dataset.correct
@@ -90,7 +106,6 @@ function selectAnswer(e) {
         nextButton.classList.remove('hide')
     } else {
         scoreButton.classList.remove('hide') // show the score button when questions are over
-
     }
     if (correct === 'true') {
         incrementScore(SCORE_POINTS) // if true +125 points
@@ -102,6 +117,7 @@ function selectAnswer(e) {
     }
 }
 
+// giving or taking points 
 incrementScore = num => {
     score += num
     scoreText.innerText = score
@@ -312,8 +328,9 @@ const questions = [
 ]
 
 
+// progress bar function
 var indexBar = document.getElementById("bar")
-// progress bar
+// progress
 function progressBar() {
     if (currentQuestionIndex == 0) {
         indexBar.style.width = "0%";
